@@ -25,7 +25,7 @@ import java.util.UUID;
 public class ProductController {
     @Autowired
     private ProductService productService;
-    @RequestMapping(value = "/list",method =RequestMethod.GET) //method 允许get请求方式，默认为get请求
+    @RequestMapping(value = "/",method =RequestMethod.GET) //method 允许get请求方式，默认为get请求
     public ModelAndView getList() throws MyException {
      /*   if (true)
         {
